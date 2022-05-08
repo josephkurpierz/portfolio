@@ -4,18 +4,18 @@
 }
 /* add global */
 *{
-  font-family: 'Courier New', Courier, monospace;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 /* general body */
 body{
-
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  
 }
 /* style header */
 header{
-  padding: 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -54,7 +54,7 @@ header nav li{
 
 
 /* style sections */
-section{
+.section-areas{
   padding-top: 100px; /*how to account for sticky header?*/
 }
 
@@ -66,7 +66,7 @@ section{
   text-align: center;
 }
 
-section h2{
+.section-areas h2{
   font-weight: bold;
   font-size: 28px;
   text-align: center;
@@ -74,11 +74,17 @@ section h2{
 
 .deployed{
   display:flex;
+  flex-wrap: wrap;
 }
 
 .deployed-list{
   margin: 10px;
   list-style: none;
+  border: 1px solid cadetblue;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .deployed li{
@@ -94,12 +100,23 @@ section h2{
 .deployed-img{
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.primary-img img{
-  width: 100%;
+section img{
+  width: 50%;
 }
 
-.secondary-img img{
-  width:50%;
+footer{
+  text-align: center;
 }
+.abox{
+  max-height: 150px;
+}
+.deployed-img:first-child{
+  max-height: 400px;
+}
+/*.buddy{
+  background-image: url("../images/run-buddy.png");
+}*/

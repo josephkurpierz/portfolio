@@ -53,13 +53,24 @@ header nav li{
   font-size: 16px;
 }
 
-
+/* general sections */
 
 .section-areas{
   display: flex;
   flex-wrap: wrap;
 }
 
+.section-areas h2{
+  background-color: var(--secondarycolor);
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  border: 2px solid var(--maincolor);
+}
+
+/* ABOUT SECTION */
 #about{
   background-image: url(../images/self.jpg);
   background-size: cover;
@@ -79,16 +90,7 @@ header nav li{
   text-align: center;
 } 
 
-.section-areas h2{
-  background-color: var(--secondarycolor);
-  font-weight: bold;
-  font-size: 28px;
-  text-align: center;
-  width: 100%;
-  margin: 0;
-  border: 2px solid var(--maincolor);
-}
-
+/* EXPERIENCE SECTION */
 .deployed{
   display:flex;
   flex-wrap: wrap;
@@ -178,6 +180,15 @@ header nav li{
   background-image: url(../images/github.png);
 }
 
+/* CONTACT SECTION */
+.contact-info{
+  padding-left: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+
+/* RESUME SECTION */
 #resume{
   background-image: url(../images/under-construction.svg);
   background-size: 10%;
@@ -188,13 +199,8 @@ header nav li{
   color: #fff;
   background-color: #000;
 }
-.contact-info{
-  padding-left: 10px;
-  display: flex;
-  flex-flow: column wrap;
-  width: 100%;
-}
 
+/* FOOTER SECTION */
 footer{
   display: flex;
   justify-content: center;
@@ -230,6 +236,7 @@ footer{
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
+  
   .deployed-img{
     flex-direction: column;
   }

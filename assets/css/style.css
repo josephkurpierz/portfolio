@@ -159,6 +159,14 @@ header nav li {
   border: 5px double var(--hovercolor);
 }
 
+#parkour{
+  background-image: url(../images/Parkour\ landing\ page.png);
+}
+
+#dogs-dogs-dogs{
+  background-image: url(../images/dogs-dogs-dogs\ landing-page.png);
+}
+
 #run-buddy {
   background-image: url(../images/run-buddy.png);
 }
